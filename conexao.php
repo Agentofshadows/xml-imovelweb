@@ -1,9 +1,13 @@
 <?php
 
+$db_banco = '';
+$db_server = '';
+$db_user = '';
+$db_pass = '';
 
-$db = mysql_connect("http://cinataimoveis.com.br", "cinataim_user", "z9#BhdhA)rx9") or die(mysql_error());
+$db = mysql_connect($db_server, $db_user, $db_pass) or die(mysql_error());
 
-$banco = mysql_select_db("cinataim_cinata_db", $db) or die(mysql_error());
+$banco = mysql_select_db($db_banco, $db) or die(mysql_error());
 
 
 
